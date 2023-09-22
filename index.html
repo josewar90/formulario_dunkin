@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Evaluación delivery Dunkin</title>
+</head>
+<body>
+    <header>
+        <h1>Evaluación delivery Dunkin</h1>
+        <img src="img/logo act.jpg" alt="">
+    </header>
+    <main>
+        <form id="evaluacion-form">
+            <fieldset>
+                <legend>Información de la Evaluación</legend>
+                <p>FECHA: <input type="text" name="fecha" id="fecha" placeholder="Ingrese la fecha"></p>
+                <p>LOCAL: <input type="text" name="nombre_local" id="nombre_local" placeholder="Nombre del Local"></p>
+                <p>ZONA: <input type="text" name="zona" id="zona" placeholder="Ingrese Zona"></p>
+                <p>Correo Electrónico: <input type="email" name="correo" id="correo" placeholder="Ingrese su correo electrónico"></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Conectividad por Agregador</legend>
+                <p>Uber: <input type="number" id="conectividad-uber" name="conectividad-uber" min="1" max="5"></p>
+                <p>Pedidos Ya: <input type="number" id="conectividad-pedidosya" name="conectividad-pedidosya" min="1" max="5"></p>
+                <p>Justo: <input type="number" id="conectividad-justo" name="conectividad-justo" min="1" max="5"></p>
+                <p>Rappi: <input type="number" id="conectividad-rappi" name="conectividad-rappi" min="1" max="5"></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Evaluación de Menú</legend>
+                <p>Uber: <input type="number" id="menu-uber" name="menu-uber" min="1" max="5"></p>
+                <p>Pedidos Ya: <input type="number" id="menu-pedidosya" name="menu-pedidosya" min="1" max="5"></p>
+                <p>Justo: <input type="number" id="menu-justo" name="menu-justo" min="1" max="5"></p>
+                <p>Rappi: <input type="number" id="menu-rappi" name="menu-rappi" min="1" max="5"></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reclamos por Agregador</legend>
+                <p>Uber: <input type="number" id="reclamos-uber" name="reclamos-uber" min="1" max="5"></p>
+                <p>Pedidos Ya: <input type="number" id="reclamos-pedidosya" name="reclamos-pedidosya" min="1" max="5"></p>
+                <p>Justo: <input type="number" id="reclamos-justo" name="reclamos-justo" min="1" max="5"></p>
+                <p>Rappi: <input type="number" id="reclamos-rappi" name="reclamos-rappi" min="1" max="5"></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cancelados por Agregador</legend>
+                <p>Uber: <input type="number" id="cancelados-uber" name="cancelados-uber" min="1" max="5"></p>
+                <p>Pedidos Ya: <input type="number" id="cancelados-pedidosya" name="cancelados-pedidosya" min="1" max="5"></p>
+                <p>Justo: <input type="number" id="cancelados-justo" name="cancelados-justo" min="1" max="5"></p>
+                <p>Rappi: <input type="number" id="cancelados-rappi" name="cancelados-rappi" min="1" max="5"></p>
+            </fieldset>
+
+            <button type="button" id="calcular-promedio">Calcular Promedio</button>
+            
+
+            <div id="resultado">
+                <!-- Aquí se mostrarán los promedios calculados -->
+            </div>
+
+            <div id="mensaje" class="mensaje">
+                <!-- Aquí se mostrará el mensaje de felicitaciones o alerta -->
+            </div>
+        </form>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
