@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mensaje.innerHTML = '¡Felicitaciones! El promedio es alto. Sigue así.';
             mensaje.classList.remove('alerta-rojo');
             mensaje.classList.add('alerta-verde'); // Cambiar a verde para promedios >= 70%
-        } else if (promedioGeneralPorcentaje < 70) {
+        } else if (promedioGeneralPorcentaje < 89) {
             mensaje.innerHTML = 'Alerta: El promedio es bajo. Debes mejorar.';
             mensaje.classList.remove('alerta-verde');
             mensaje.classList.add('alerta-rojo'); // Cambiar a rojo para promedios < 50%
